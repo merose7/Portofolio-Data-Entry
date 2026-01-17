@@ -199,6 +199,26 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .tool-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .tool-logo:hover {
+            transform: scale(1.1);
+        }
+
         .certificate-list {
             list-style: none;
         }
@@ -389,7 +409,22 @@
                     </ul>                 
                 </div>
             </div>
-            
+
+            <div class="section">
+                <h2>Tools</h2>
+                <div class="tools-grid">
+                    <img src="image/excel.png" alt="Microsoft Excel" class="tool-logo">
+                    <img src="image/M.Word.webp" alt="Microsoft Word" class="tool-logo">
+                    <img src="image/sheets.png" alt="Google Sheets" class="tool-logo">
+                    <img src="image/docs.png" alt="Google Docs" class="tool-logo">
+                    <img src="image/pdf.png" alt="PDF Tools" class="tool-logo">
+                    <img src="image/googledrive.png" alt="Data & File Management" class="tool-logo">
+                    <img src="image/one.png" alt="Data & File Management" class="tool-logo">
+                    <img src="image/gmail.png" alt="Communication Tools" class="tool-logo">
+                </div>
+            </div>
+
+
             <div class="section">
                 <h2>Sertifikat & Pelatihan</h2>
                 <ul class="certificate-list">
